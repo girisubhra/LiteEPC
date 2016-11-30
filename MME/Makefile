@@ -33,5 +33,3 @@ clean:
 	rm -f $(OBJDIR)/*.o
 	rm -f $(SRCDIR)/*.o
 
-
-
