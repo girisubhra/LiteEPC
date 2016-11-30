@@ -1,9 +1,9 @@
 ############################################################################
-#		SAEGW Makefile						
+#               Makefile for MME						
 #	
 #		TO BUILD: make all
 #		TO REBUILD: make clean; make all
-#
+#          @@Written by Subhra Prakash Giri
 #############################################################################
 
 CC		= gcc
@@ -15,8 +15,9 @@ SGWOBJ          = obj
 SRCDIR 		= src
 HDRDIR 		= hdr
 TARGET 		= mme
-
+TARGET_OBJ = test.o
 SOURCES=$(SRCDIR)/mme.c\
+	$(SRCDIR)/mme_messages.c\
 	$(SRCDIR)/test.c
 OBJS=$(SOURCES:.c=.o)
 .c.o:$(SOURCES) 

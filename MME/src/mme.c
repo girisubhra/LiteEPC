@@ -16,7 +16,6 @@ int mme_init_socket_if()
 		perror("\nSocket error : ");
 		return -1;
 	}
-	printf("Socket Creation SUCCESS \n");
 	return sock;
 }
 	
@@ -24,6 +23,7 @@ int mme_init()
 {
 	int sockfd;
 	sockfd = mme_init_socket_if();
+	printf("Initialization success\n");
 }
 
 void prnLOGO()
