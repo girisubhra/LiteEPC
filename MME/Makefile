@@ -32,4 +32,3 @@ clean:
 	rm -f $(TARGET)
 	rm -f $(OBJDIR)/*.o
 	rm -f $(SRCDIR)/*.o
-
