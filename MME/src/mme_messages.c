@@ -3,7 +3,7 @@
 int create_session_request()
 {
 	printf("Code needs to be written \n");
-	system("clear");
+//	system("clear");
 }
 
 int modify_bearer_request()
