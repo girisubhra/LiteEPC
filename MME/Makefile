@@ -7,7 +7,7 @@
 #############################################################################
 
 CC		= gcc
-CFLAGS 		= -g -c -o
+CFLAGS 		= $(EXTRA_DEFINE) -g -c -o 
 LIB 		= -lpthread
 INCLUDE 	= -Ihdr
 OBJDIR 		= obj
@@ -15,6 +15,7 @@ SGWOBJ          = obj
 SRCDIR 		= src
 HDRDIR 		= hdr
 TARGET 		= mme
+EXTRA_DEFINE  += -DTEST_043 
 TARGET_OBJ = test.o
 SOURCES=$(SRCDIR)/mme.c\
 	$(SRCDIR)/mme_messages.c\
